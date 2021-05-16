@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!------ Bootstrap CDN ----->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+
+      <!------ Linked CSS sheet ----->
+      <link rel="stylesheet" href="css/app.css">
+
+      <!------ Font Awesome Icons ----->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+      <!------ Imported Fonts ----->
+      <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+      <!------ jQuery ----->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+      <title>Ben Sherman Portfolio</title>
+    </head>
+    <body>
+
+      <!--- Custom Navbar -->
+      <div class="custom_nav d-flex">
+        <a href="#showcase" class="custom_nav_brand d-inline-block">
+          <h3 class="mx-4 mt-4 mb-0 d-flex text-danger text-uppercase font-weight-bold">ben sherman</h3>
+        </a>
+        <div class="ml-auto" id="button_container">
+          <div class="circle icon" data-toggle="collapse" data-target="navigationPage" role="button">
+            <span id="span1" class="line"></span>
+            <span id="span2" class="line"></span>
+            <span id="span3" class="line"></span>
+          </div>
+        </div>
+      </div>
+      
+      <!--- Navigation overlay -->
+      <div id="navigationOverlay">
+        <ul class="navigation_item_list list-inline text-center">
+          <li class="nav_item">
+            <a href="#about_section" class="nav_links" id="about_nav_link">
+              <h1 class="text-uppercase font-weight-bold text-white my-3 nav_link_text">About</h1>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#portfolio_section" class="nav_links" id="portfolio_nav_link">
+              <h1 class="text-uppercase font-weight-bold text-white my-3 nav_link_text">Portfolio</h1>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#resume_section" class="nav_links" id="resume_nav_link">
+              <h1 class="text-uppercase font-weight-bold text-white my-3 nav_link_text">Resume</h1>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact_section" class="nav_links" id="contact_nav_link">
+              <h1 class="text-uppercase font-weight-bold text-white my-3 nav_link_text">Contact</h1>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!------ Showcase ----->
+      <div id="showcase" class="d-flex justify-content-center align-items-center">
+        <div id="mainImageOverlay"></div>
+        <div id="header" class= "container text-center text-white p-5">
+          <h1 class="display-1 text-uppercase mb-4" id="showcase_heading">hello!</h3>
+          <hr class="d-block mx-auto m-0 mb-5" id="showcase_hr">
+          <h4 class="text-uppercase mb-3" id="showcase_subheading">My name is Ben Sherman.</h1>
+          <h4 class="text-uppercase" id="showcase_subheading">I'm a data analyst.</h1>
+          <a href="#portfolio_section" class="btn btn-lg btn-danger px-5 mt-5 text-uppercase" id="see_my_work_button">See my work</a>
+        </div>
+      </div>
+
+      <!------ About ----->
+      <div class="container px-0 py-5" id="about_section">
+        <h2 class="mb-3 mt-5 text-center text-uppercase font-weight-bold hidden_element">About</h2>
+        <hr class="d-block mx-auto m-0 mb-5 hidden_element hr_stylings">
+        <div class="row px-4 px-md-0">
+          <div class="col col-lg-6 text-center px-4">
+            <img src="images/PortfolioPic.jpg" alt="image_of_self" class="shadow-lg p-1 mb-4 bg-dark rounded" id="profile_pic">
+            <h4 class="font-weight-bold my-3 hidden_element">Who am I?</h4>
+            <hr class="d-block mx-auto m-0 mb-4 hidden_element hr_stylings">
+            <p class="text-muted mb-0 hidden_element"> I'm a junior-level full-stack developer, data analyst, and database designer currently based in the greater Pittsburgh area.</p>
+            <p class="text-muted mb-2 hidden_element">I have a passion for using my creative talents and problem-solving abilities to improve the lives of others through programming.</p>
+            <a href="#contact_section" class="btn btn-outline-danger text-uppercase py-2 px-4 mt-4 hidden_element" id="lets_connect_button">Let's Connect!</a>
+          </div>
+          <div class="col-lg-6 pl-lg-5">
+            <div class="card border-danger mb-3 bg-transparent shadow-lg mt-5 mt-lg-0 hidden_element">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <i class="fas fa-code-branch fa-5x text-danger mb-2" id="about_logos"></i>
+                  </div>
+                  <div class="col-9 text-right">
+                    <h4 class="card-title text-uppercase text-dark">Versatile</h4>
+                    <hr class="about_card_hrs">
+                    <p class="text-muted">I have experience in full stack development, data analysis, and database design.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-danger mb-3 mt-4 bg-transparent shadow-lg hidden_element">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-3 text-center">
+                    <i class="fas fa-cubes fa-5x text-danger mt-3"></i>
+                  </div>
+                  <div class="col-9 text-right">
+                    <h4 class="card-title text-uppercase">Scalable</h4>
+                    <hr class="about_card_hrs">
+                    <p class="text-muted">I build applications with clean, efficient, production-ready code that's easily scalable. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-danger mb-3 mt-4 bg-transparent shadow-lg hidden_element">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <i class="fas fa-lightbulb fa-5x text-danger mb-2"></i>
+                  </div>
+                  <div class="col-9 text-right">
+                    <h4 class="card-title text-uppercase">Logical</h4>
+                    <hr class="about_card_hrs">
+                    <p class="text-muted">Intuitive design on both the front and back end of an application is essential to my process.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-danger mb-3 mt-4 bg-transparent shadow-lg hidden_element">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-3 text-center">
+                    <i class="fas fa-tablet-alt fa-5x text-danger mb-2"></i>
+                  </div>
+                  <div class="col-9 text-right">
+                    <h4 class="card-title text-uppercase">Responsive</h4>
+                    <hr class="about_card_hrs">
+                    <p class="text-muted">My apps look good on a variety of devices - including phones, tablets, and computers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------ Lower About Section ----->
+      <div class="row justify-content-center mb-5 px-4 px-md-0">
+        <div class="card mb-5 border-danger bg-transparent shadow-lg hidden_element">
+          <h5 class="card-header border-danger text-center">Full Stack Development Experience:</h5>
+          <div class="card-body text-center">
+            <img src="images/javascriptlogo.png" alt="jslogo" class="m-3 tech_logos">
+            <img src="images/python.png" alt="pythonlogo" class="m-3 tech_logos">
+            <img src="images/sqllogo.png" alt="sqllogo" class="m-3 tech_logos">
+            <img src="images/msexcel.png" alt="excellogo" class="m-3 tech_logos">
+            <img src="images/powerbi.png" alt="powerbilogo" class="m-3 tech_logos">
+            <img src="images/numpy.svg" alt="numpylogo" class="m-3 tech_logos">
+            <img src="images/csslogo.png" alt="csslogo" class="m-3 tech_logos">
+            <img src="images/HTMLLogo.png" alt="htmllogo" class="m-3 tech_logos">
+            <hr>
+            <p class="card-text text-muted">JavaScript, Python, SQL, MSExcel, PowerBI, Numpy, CSS, HTML</p>
+          </div>
+          <div class="card-footer border-danger justify-content-center">
+            <a href="#portfolio_section" class="btn btn-outline-danger d-block text-uppercase py-2 my-1" id="view_projects_button">View Projects</a>
+          </div>
+        </div>
+      </div>
+        
+
+      <!------ Portfolio ----->
+      <section id="portfolio_section">
+        <div class="container py-5" id="portfolio_section">
+          <h2 class="text-center mt-5 mb-3 font-weight-bold text-white text-uppercase hidden_element">Portfolio</h2>
+          <hr class="d-block mx-auto m-0 mb-5 hidden_element hr_stylings">
+
+          <!------ Filtering by language ----->
+          <div class="container d-flex justify-content-center">
+            <div class="row">
+              <div class="d-flex" id="portfolio_container">
+                <h5 data-filter="*" class="mx-3 text-danger hidden_element">All</h5>
+                <h5 data-filter=".JavaScript" class="d-sm-none mx-3 text-white hidden_element">JS</h5>
+                <h5 data-filter=".JavaScript" class="d-none d-sm-flex mx-3 text-white hidden_element">JavaScript</h5>
+                <h5 data-filter=".Python" class="mx-3 text-white hidden_element">Python</h5>
+                <!---- Comment out for now
+                <h5 data-filter=".React" class="mx-3 text-white hidden_element">React</h5>
+                -->
+                <!---- Comment out for now
+                <h5 data-filter=".SQL" class="mx-3 text-white hidden_element">SQL</h5> 
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------ Project Display ----->
+        <div class="container pb-5">
+          <div class="row mb-5 px-3 px-md-0 grid" id="project_container">
+            <!------ Standard Records Project ----->
+            <div class="card border-danger bg-transparent shadow-lg mt-3 project_display grid-item Python">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <img src="images/StandardRecordsScreenshot.jpeg" class="card-img" alt="Standard Records Project">
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h4 class="card-title text-uppercase text-white">Standard Records</h4>
+                    <hr class="project_hrs">
+                    <p class="card-text text-white">E-Commerce site for buying specialty vinyl products, including a product database for owner inventory management.</p>
+                    <p class="card-text text-white d-lg-none d-xl-block">Built using Python, Django, Bootstrap, jQuery, HTML, CSS and GitHub.</p>
+                    <a href="https://github.com/October2020PandA/BenShermanSoloProject" target="_blank"><i class="fab fa-github-square fa-3x text-danger"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Resume Section -->
+      <section id="resume_section" class="text-center mt-5">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="mb-3 font-weight-bold text-uppercase hidden_element">Resume</h2>
+              <hr class="d-block mx-auto m-0 mb-4 hidden_element hr_stylings">
+              <br>
+              <a href="https://docs.google.com/document/d/1UMG6vVuPkZUEk6Lcy7jMnRL0AE9XqP3Ny_SDCZxAkw4/edit" target="_blank" class="btn btn-outline-danger mb-5 py-2 px-5 hidden_element">
+                DOWNLOAD</a>
+            </div>
+          </div>
+            <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
+        </div>
+      </section>
+
+
+
+      <!-- Contact Section -->
+      <section id="contact_section">
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center mb-5">
+              <i class="fas fa-envelope fa-2x text-white hidden_element"></i>
+              <h2 class="mb-5 text-white hidden_element">Let's Connect!</h2>
+              <form action="https://getform.io/f/4454b1f5-6f46-4297-8e50-e4174f526011" method="POST" class="hidden_element">
+                <div class="form-group text-white">
+                  <!-- <label for="exampleInputName">Name</label> -->
+                  <input type="name" class="form-control" id="exampleInputName" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <!-- <label for="exampleInputEmail">Email</label> -->
+                  <input type="email" class="form-control" id="exampleInputEmail" name="email" placeholder="Email">
+                </div>                        
+                <div class="form-group">
+                  <!-- <label for="exampleFormControlTextarea1">Message</label> -->
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Your Message" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger my-4 mx-auto text-uppercase py-2 px-5">Submit</button>
+              </form>    
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg-3 col-md-6 mb-3 mb-3 mb-lg-0">
+              <div class="card py-2 h-100 border border-white bg-transparent hidden_element">
+                <div class="card-body text-center">
+                  <i class="fab fa-github text-danger mb-2"></i>
+                  <h4 class="text-uppercase text-white m-0">GitHub</h4>
+                  <hr class="my-4 hidden_element hr_stylings">
+                  <div class="small text-black-50">
+                    <a href="https://github.com/Redbeard29" target="_blank" class="text-white">https://github.com/Redbeard29</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3 mb-3 mb-lg-0 mt-3 mt-md-0">
+              <div class="card py-2 h-100 border border-white bg-transparent hidden_element">
+                <div class="card-body text-center text-white">
+                  <i class="fab fa-linkedin text-danger mb-2"></i>
+                  <h4 class="text-uppercase m-0">LinkedIn</h4>
+                  <hr class="my-4 hidden_element hr_stylings">
+                  <div class="small text-black-50">
+                    <a href="https://www.linkedin.com/in/benjamin-sherman-98b2b41b1/" target="_blank" class="text-white">https://www.linkedin.com/in/benjamin-sherman-98b2b41b1/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3 mb-md-0 mt-3 mt-lg-0">
+              <div class="card py-2 h-100 border border-white bg-transparent hidden_element">
+                <div class="card-body text-center">
+                  <i class="fas fa-envelope text-danger mb-2"></i>
+                  <h4 class="text-uppercase text-white m-0">Email</h4>
+                  <hr class="my-4 hidden_element hr_stylings">
+                  <div class="small">
+                    <a href="mailto:ben@benshermanmusic.com" class="text-white">ben.sherman.dev@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3 mb-md-0 mt-3 mt-lg-0">
+              <div class="card py-2 h-100 border border-white bg-transparent hidden_element">
+                <div class="card-body text-center">
+                  <i class="fas fa-mobile-alt text-danger mb-2"></i>
+                  <h4 class="text-uppercase text-white m-0">Phone</h4>
+                  <hr class="my-4 hidden_element hr_stylings">
+                  <div class="small text-white">Available upon request</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer" class="p-3 bg-dark small text-center text-white">
+        <div class="container my-3">
+          Copyright &copy; Ben Sherman 2021
+        </div>
+        <a href="#showcase" class="btn btn-outline-danger text-white text-uppercase px-5 py-2 my-1" id="back_to_top_button">Back to top</a>
+      </section>
+      <script src="script.js"></script>
+
+      <!-- Popper.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+      <!-- Bootstrap.js --> 
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+      <!-- Isotope.js --> 
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    </body>
+  </html>

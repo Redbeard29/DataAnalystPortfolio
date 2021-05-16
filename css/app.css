@@ -1,0 +1,172 @@
+body{
+    font-family: "Raleway", sans-serif;
+    background: linear-gradient(#d6d5d5, white);
+}
+
+.custom_nav {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5; 
+}
+
+.custom_nav .custom_nav_brand{
+  text-decoration: none;
+}
+
+.custom_nav .custom_nav_brand h3 {
+  font-weight: 600; 
+}
+
+#navigationOverlay .navigation_item_list{
+  margin-top: 180px;
+  list-style: none;
+}
+
+#navigationOverlay .navigation_item_list .nav_item{
+  margin-top: 60px;
+  background-color: #dd3444;
+}
+
+#navigationOverlay .navigation_item_list .nav_item:hover{
+  transform: scale(1.1);
+}
+
+#navigationOverlay .navigation_item_list .nav_item .nav_links{
+  text-decoration: none;
+  color: grey;
+}
+
+
+/* Building button*/
+    
+#button_container{
+  background-color: #dd3444;
+  display: inline-block;
+  border-radius: 500px;
+  margin: 10px;
+  position: relative;
+  padding: 15px;
+}
+
+.circle{
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.line{
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
+}
+
+#span1{
+  top: 18%;
+}
+
+#span2{
+  top: 48%;
+}
+
+#span3{
+  top: 78%;
+}
+
+/* Change button to x on transition */
+
+.icon.close #span1{
+  transform: rotate(45deg);
+  top: 48%;
+}
+
+.icon.close #span2, .icon.close #span3{
+  transform: rotate(-45deg);
+  top: 48%;
+}
+
+/* Nav overlay that appears on button click */
+#navigationOverlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #151719;
+  z-index: 4;
+}
+
+/* Main photo showcase */
+#showcase {
+    background: url("../images/portfoliocodingbackground.jpg") center/cover no-repeat;
+    min-height: 750px;
+    position: relative; }
+    #showcase #header {
+      z-index: 2; }
+    #showcase #mainImageOverlay {
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+      #showcase h1 {
+        font-weight: 450;}
+
+.hr_stylings, #showcase_hr{
+    border-color: #dd3444;
+    border-width: 0.25rem;
+    width: 70px; 
+}
+
+.project_hrs{
+  border-color: #dd3444;
+  border-width: 0.1rem;
+}
+
+.tech_logos{
+  height: 50px;
+}
+
+.hidden_element{
+  opacity: 0;
+}
+
+#portfolio_section{
+  background-color: #333b3f;
+}
+
+#contact_section{
+  background-color:#131618;
+}
+
+
+@media (max-width: 768px) {
+  #showcase_heading{
+    font-size: 5rem; 
+  } 
+  #showcase_subheading{
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #showcase_heading{
+    font-size: 4.5rem; 
+  } 
+  #showcase_subheading{
+    font-size: 1.2rem;
+  }
+  #profile_pic{
+    height: 380px;
+  }
+}
