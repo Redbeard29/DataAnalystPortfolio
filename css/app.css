@@ -137,6 +137,10 @@ body{
   height: 50px;
 }
 
+.smaller_logos{
+  height: 85px;
+}
+
 .hidden_element{
   opacity: 0;
 }
